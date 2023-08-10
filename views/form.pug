@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+    div(class='messageForm') 
+        h1 Enter your message here
+        form(method='POST' action='/new')
+            input(name='messageUser' placeholder='enter your name...' required  autofocus) 
+            br
+            input(name='messageText' placeholder='enter your message...' required) 
+            br
+            button(type='submit') post message
